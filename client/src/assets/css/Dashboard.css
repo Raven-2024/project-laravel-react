@@ -1,0 +1,116 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Add Student Button */
+.dashboard-actions .btn-primary {
+  background-color: #4e73df;
+  border-color: #4e73df;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.dashboard-actions .btn-primary:hover {
+  background-color: #3a5ec0;
+  border-color: #3a5ec0;
+}
+
+/* Logout Button */
+.logout-btn {
+  background-color: #e74a3b;
+  border-color: #e74a3b;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #be2617;
+  border-color: #be2617;
+}
+
+/* Search Form */
+.card-body form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.card-body input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #d1d3e2;
+  border-radius: 4px;
+  flex-grow: 1;
+  max-width: 400px;
+}
+
+.card-body input[type="submit"] {
+  background-color: #1cc88a;
+  border-color: #1cc88a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.card-body input[type="submit"]:hover {
+  background-color: #17a673;
+  border-color: #17a673;
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #858796;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 12px;
+  vertical-align: top;
+  border-top: 1px solid #e3e6f0;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #e3e6f0;
+  font-weight: 600;
+  color: #4e73df;
+  background-color: #f8f9fc;
+}
+
+.table-hover tbody tr:hover {
+  color: #2e2f37;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Action Buttons */
+.btn-success {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.btn-danger {
+  padding: 6px 12px;
+  font-size: 13px;
+}

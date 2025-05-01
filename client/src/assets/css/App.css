@@ -1,0 +1,110 @@
+/* Base styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Outfit:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container.reverse {
+    flex-direction: row-reverse;
+}
+
+.container.vertical {
+    flex-direction: column;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content {
+    flex: 1;
+    text-align: center;
+}
+
+.content h1,
+.content h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.btn {
+    background-color: #f0bb78;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #fff !important;
+    border: 1px solid #333;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #626f47;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo1 {
+        font-size: 2rem;
+    }
+
+    .container.reverse {
+        flex-direction: column;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+    .image {
+      display: none;
+    }
+}
