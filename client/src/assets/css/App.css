@@ -82,11 +82,23 @@ main {
     color: #fff !important;
     border: 1px solid #333;
     transition: background-color 0.3s;
+    text-decoration: none;
 }
 .btn:hover {
     background-color: #626f47;
 }
 
+.btn-primary {
+    background-color: dodgerblue;
+}
+
+.btn-success {
+    background-color: gold;
+}
+
+.btn-danger {
+    background-color: red;
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -105,6 +117,6 @@ main {
         padding: 2rem 0;
     }
     .image {
-      display: none;
+        display: none;
     }
 }

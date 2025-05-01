@@ -88,12 +88,9 @@ const Dashboard = () => {
                                             <td>{item.age}</td>
                                             <td>{item.address}</td>
                                             <td>
-                                                <Link
-                                                    to={`/display-student-edit/${item.id}`}
-                                                    className="btn btn-success"
-                                                >
-                                                    Edit
-                                                </Link>
+<Link to={`/edit-student/${item.id}`} className="btn btn-success">
+    Edit
+</Link>
                                             </td>
                                             <td>
                                                 <button
