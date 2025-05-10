@@ -28,7 +28,7 @@ class StudentController extends Controller
 
   public function show()
   {
-    $student = Student::all();
+    $student = Student::where ("status", 1)->get();
     return response()->json([
       'list_of_students' => $student,
       'status' => 200,
