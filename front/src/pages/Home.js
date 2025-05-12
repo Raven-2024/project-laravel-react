@@ -33,7 +33,7 @@ const Home = () => {
               </button>
             </div>
             <div className="image">
-              <img src="/images/home.png" alt="Recipe collection" />
+              <img src="/images/clinic1.jpg" alt="ClinicCare collection" />
             </div>
           </div>
         </section>
@@ -50,7 +50,7 @@ const Home = () => {
               </p>
             </div>
             <div className="image">
-              <img src="/images/about.png" alt="About our recipe platform" />
+              <img src="/images/clinic2.jpg" alt="About our ClinicCare platform" />
             </div>
           </div>
         </section>
@@ -69,7 +69,7 @@ const Home = () => {
               </button>
             </div>
             <div className="image">
-              <img src="/images/cta-image.png" alt="Recipe management" />
+              <img src="/images/clinic3.jpg" alt="Record management" />
             </div>
           </div>
         </section>

@@ -3,18 +3,19 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\StudentController;
+use App\Http\Controllers\PatientController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::post('/add-student', [StudentController::class, 'store']);
-Route::get('/fetch-student', [StudentController::class, 'show']);
-Route::get('/student-edit/{id}', [StudentController::class, 'edit']);
-Route::put('/student-update/{id}', [StudentController::class, 'update']);
-Route::put('/student-delete/{id}', [StudentController::class, 'delete']);
-Route::get('/student-search', [StudentController::class, 'search']);
+Route::post('/add-patient', [PatientController::class, 'store']);
+Route::get('/fetch-patient', [PatientController::class, 'show']);
+Route::get('/view-patient', [PatientController::class, 'viewPatient']);
+Route::get('/patient-edit/{id}', [PatientController::class, 'edit']);
+Route::put('/patient-update/{id}', [PatientController::class, 'update']);
+Route::put('/patient-delete/{id}', [PatientController::class, 'delete']);
+Route::get('/patient-search', [PatientController::class, 'search']);
 
 // Auth Routes (Updated to use correct UserController)
 Route::post('/register-user', [UserController::class, 'register']);

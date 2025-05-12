@@ -8,12 +8,14 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('students', function (Blueprint $table) {
+        Schema::create('patients', function (Blueprint $table) {
             $table->id();
             $table->string('firstname');
             $table->string('lastname');
             $table->integer('age');
+            $table->enum('gender', ['male', 'female', 'other']);
             $table->string('address');
+            $table->string('medicalHistory');
             $table->tinyInteger('status')->default(1);
             $table->timestamps();
         });
@@ -21,6 +23,6 @@ return new class extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('students');
+        Schema::dropIfExists('patients');
     }
 };

@@ -1,0 +1,82 @@
+.edit-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.edit-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.edit-input {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 2px solid #6c63ff;
+  transition: border-color 0.3s ease;
+}
+
+.edit-input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.edit-gender-options {
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+.edit-radio-label {
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-radio-input {
+  accent-color: #2575fc;
+  transform: scale(1.2);
+}
+
+.edit-submit-btn {
+  align-self: flex-end;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-submit-btn:hover {
+  background: linear-gradient(135deg, #0f867f 0%, #2ddf6e 100%);
+}

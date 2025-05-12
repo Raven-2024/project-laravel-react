@@ -1,0 +1,175 @@
+/* Container for the entire form */
+.patient-form-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+/* Card styling */
+.form-card {
+  width: 100%;
+  max-width: 900px;
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the form card */
+.form-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header with gradient background */
+.form-header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  padding: 1rem 2rem;
+  color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+/* Form title */
+.form-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Body styling */
+.form-body {
+  padding: 2rem 3rem;
+}
+
+/* Form styling */
+.patient-form {
+  width: 100%;
+}
+
+/* Flex container for input rows */
+.form-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Group for form inputs */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Full-width input fields */
+.full-width {
+  width: 100%;
+}
+
+/* Labels for input fields */
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Inputs styling */
+.form-input {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 2px solid #ccc;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect for inputs */
+.form-input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 4px rgba(106, 17, 203, 0.1);
+  background-color: #f1f7ff;
+}
+
+/* Hover effect for inputs */
+.form-input:hover {
+  border-color: #2575fc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Radio button options */
+.gender-options {
+  display: flex;
+  gap: 2rem;
+  padding-top: 0.75rem;
+}
+
+/* Individual gender options */
+.gender-option {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.gender-option input {
+  cursor: pointer;
+}
+
+/* Form submit button container */
+.form-submit {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+/* Submit button styling */
+.submit-button {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button hover effect */
+.submit-button:hover {
+  background: linear-gradient(135deg, #0c7b6a 0%, #2fd171 100%);
+  transform: scale(1.05);
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .patient-form-container {
+    padding: 0 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
+
